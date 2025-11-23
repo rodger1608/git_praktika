@@ -233,7 +233,7 @@ body {
   gap: 40px;
 }
 
-.servicec__block {
+.services__block {
   flex: 1;
 }
 
@@ -241,18 +241,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 100px;
   background: #e5e5e5;
-  background-clip: content-box;
   border: 1px solid #e5e5e5;
   box-shadow: 0 0 0 1px #ccc inset;
   margin-bottom: 15px;
-  padding: 10px;
+  padding: 0;
   border-radius: 5px;
-  color: #999;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
   text-align: center;
+  overflow: hidden;
+}
+
+.services__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
 }
 
 .services__title {
