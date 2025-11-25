@@ -4,37 +4,38 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "CenturyGothic";
+  src: url('fonts/centurygothic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "CenturyGothic", Arial, sans-serif;
   color: #333;
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .header {
   background: #1f1f1f;
   padding: 20px 0;
-}
-
-.header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 .header__link {
     font-size: 48px;
-    font-family: "CenturyGothic", sans-serif;
     color: #fff;
     text-shadow: 0px 1px 2px rgba(0,0,0,0.7);
     text-decoration: none;
 }
 
 .nav__list {
-  display: flex;
   gap: 30px;
   list-style: none;
 }
@@ -56,19 +57,19 @@ body {
   padding: 60px 0;
 }
 
-.featured__flex {
+.d-flex {
   display: flex;
   justify-content: space-between;
   gap: 40px;
+  padding: 15px;
 }
 
-.feature__text {
+.feature__wrapper {
   flex: 1;
 }
 
-.feature__wel {
+.feature__title{
     font-size: 50px;
-    font-family: Arial, sans-serif;
     color: #fff;
     font-weight: bold;
     line-height: 1.1;
@@ -76,15 +77,14 @@ body {
     margin-bottom: 20px;
 }
 
-.feature__text p {
+.feature__text {
   font-size: 14px;
-  font-family: Arial, sans-serif;
   color: #fff;
   line-height: 1.7;
   margin-bottom: 20px;
 }
 
-.img__wrapper {
+.slider {
   padding: 10px;
   background: #ffffff;
   border: 1px solid #ccc;
@@ -94,7 +94,7 @@ body {
   box-sizing: border-box;
 }
 
-.feature__img {
+.slider__img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,26 +108,20 @@ body {
   text-align: center;
 }
 
-.middle {
-  padding: 16px 0;
+.porfolio {
+  padding: 10px 0;
+  border-bottom: 1.5px solid #dcdcdc;
 }
 
-.middle__row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 0;
-}
-
-.middle__text {
+.porfolio__text {
   font-size: 25px;
-  font-family: "CenturyGothic", sans-serif;
+  font-weight: 400;
   color: #606060;
   line-height: 1.52;
   margin: 0;
 }
 
-.middle__btn {
+.porfolio__btn {
   display: inline-flex;
   padding: 15px 30px;
   border-radius: 5px;
@@ -144,7 +138,7 @@ body {
   border: none;
 }
 
-.middle__btn .arrow {
+.porfolio__btn .arrow {
   display: inline-block;
   width: 9px;
   height: 14px;
@@ -153,87 +147,47 @@ body {
   background-repeat: no-repeat;
 }
 
-.content {
-  padding: 16px 0;
+.about {
+  padding: 10px 0;
+  border-bottom: 1.5px solid #dcdcdc;
 }
 
-.content__flex {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.content__left {
+.about__left {
   flex: 2;
 }
 
-.content__right {
+.about__right {
   flex: 1;
 }
 
-.content__title {
+.about__title {
     font-size: 22px;
-    font-family: "CenturyGothic", sans-serif;
     color: #606060;
     line-height: 1.7;
     margin-bottom: 15px;
+    font-weight: 300;
 }
 
-.content__text {
+.about__text {
     font-size: 14px;
-    font-family: Arial, sans-serif;
     color: #808080;
     line-height: 1.9;
     margin-bottom: 20px;
 }
 
-.content__author {
+.about__author {
   text-align: right;
   font-style: italic;
   opacity: 1;
   font-weight: bold;
 }
 
-.divider {
-  content: "";
-  display: block;
-  width: 90%;
-  max-width: 1200px;
-  height: 1px;
-  background: #dcdcdc;
-  margin: 10px auto;
-}
-
-.divider__header {
-  content: "";
-  display: block;
-  height: 0.5px;
-  background: #0070ad;
-  margin: 0 auto;
-  opacity: 0.5;
-}
-
-.divider__footer {
-  content: "";
-  display: block;
-  height: 0.3px;
-  background: #a4a4a4;
-  margin: 0 auto;
-  opacity: 0.5;
-}
-
-
 .services {
   padding: 16px 0;
+  border-bottom: 1.5px solid #dcdcdc;
 }
 
-.services__flex {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.services__block {
+.services__item {
   flex: 1;
 }
 
@@ -262,7 +216,7 @@ body {
 
 .services__title {
   font-size: 16px;
-  font-family: "CenturyGothic", sans-serif;
+  font-weight: 300;
   color: #606060;
   line-height: 2.4;
   margin-bottom: 10px;
@@ -270,7 +224,6 @@ body {
 
 .services__text {
   font-size: 14px;
-  font-family: "Arial", sans-serif;
   color: #808080;
   line-height: 1.9;
   margin-bottom: 20px;
@@ -279,13 +232,6 @@ body {
 .footer {
   background: #2a2a2a;
   color: #ccc;
-}
-
-.footer__flex {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 40px 0;
 }
 
 .footer__col {
@@ -303,7 +249,7 @@ body {
 
 .footer__title {
   font-size: 16px;
-  font-family: "CenturyGothic", sans-serif;
+  font-weight: 300;
   color: #989898;
   line-height: 2.7;
   border-bottom: 1px solid #3a3a3a;
@@ -318,7 +264,6 @@ body {
 
 .footer__item__adress {
   font-size: 14px;
-  font-family: "Arial", sans-serif;
   color: #989898;
   line-height: 1.9;
 }
@@ -341,22 +286,22 @@ body {
 .footer__bottom {
     background: #1f1f1f;
     padding: 20px 0;
+    border-top: 0.7px solid #dcdcdc6e;
 }
 
 .copyright__text{
   font-size: 12px;
-  font-family: "Arial", sans-serif;
   color: #989898;
   line-height: 3.2;
   margin: 0;
   text-align: left;
 }
 
-@font-face {
-  font-family: "CenturyGothic";
-  src: url('fonts/centurygothic.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
+@media (max-width: 1400px) {
+  .container {
+    width: 100%;
+    margin-inline: 24px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -367,16 +312,9 @@ body {
     padding-right: 15px;
   }
 
-  .featured__flex,
-  .content__flex,
-  .services__flex,
-  .footer__flex {
+  .d__flex {
     flex-direction: column;
-  }
-
-  .middle__row {
-    flex-direction: column;
-    text-align: center;
+    flex-wrap: wrap;
     gap: 20px;
   }
 
@@ -393,10 +331,6 @@ body {
     transition: background 0.3s ease, padding 0.3s ease;
   }
 
-  .divider {
-    width: 80%;
-  }
-
   .feature__img {
     height: 200px;
   }
@@ -407,6 +341,10 @@ body {
   .container {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .d-flex {
+    flex-wrap: wrap;
   }
   
   .nav__list {
@@ -425,10 +363,6 @@ body {
     background-color: linear-gradient(360deg, rgba(24, 102, 135, 1) 0%, rgba(35, 134, 176, 1) 100%);
     padding: 20px 0;
     transition: background 0.3s ease, padding 0.3s ease;
-  }
-
-  .divider {
-    width: 70%;
   }
 
   .feature__img {
