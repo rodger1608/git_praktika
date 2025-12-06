@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../html youtube"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Практика HTML CSS"
+	}
+}
