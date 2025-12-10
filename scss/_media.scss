@@ -9,7 +9,6 @@
 
 @media (max-width: 992px) {
   .d-flex {
-    flex-direction: column;
     gap: 20px;
   }
 
@@ -30,8 +29,6 @@
   }
 
   .d-flex {
-    flex-direction: column;
-    flex-wrap: wrap;
     gap: 20px;
   }
 
@@ -126,10 +123,6 @@
     order: 2;
     margin-top: 20px;
   }
-
-  .footer__col {
-    flex: 0 0 50%;
-  }
 }
 
 @media (min-width: 769px) {
@@ -164,10 +157,6 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-
-  .d-flex {
-    flex-wrap: wrap;
-  }
   
   .nav__list {
     flex-direction: column;
@@ -200,7 +189,24 @@
     height: 220px;
   }
 
-  .footer__col {
-    flex: 0 0 100%;
+  .slick-dots {
+    bottom: 10px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 10px;
+    opacity: 0.6;
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: 1;
+  }
+
+  .services__img img {
+    height: auto;
+
+    img {
+      height: auto;
+    }
   }
 }

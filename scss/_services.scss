@@ -1,35 +1,25 @@
 @use "variables" as *;
-@use "mixins";
+@use "fonts";
 
 .services {
-    padding: 16px 0;
-    border-bottom: 1.5px solid $color-border;
+    border-bottom: 1px solid $color-border;
 
 &__item {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
     }
 
 &__img {
-    @include mixins.flex-center;
     width: 100%;
     height: 100px;
-    background: #e5e5e5;
-    border: 1px solid #e5e5e5;
+    background: $color-border;
+    border: 1px solid $color-border;
     box-shadow: 0 0 0 1px $color-milkwhite inset;
-    margin-bottom: 15px;
-    padding: 0;
     border-radius: 5px;
-    text-align: center;
     overflow: hidden;
 
 img {
         width: 100%;
         height: 100%;
-        object-fit: fill;
-        display: block;
         }
     }
 
@@ -38,14 +28,11 @@ img {
     font-weight: 300;
     color: $color-gray;
     line-height: 2.4;
-    margin-bottom: 10px;
     }
 
 &__text {
         font-size: 14px;
         color: $color-gray-light;
         line-height: 1.9;
-        margin-bottom: 20px;
-        margin-top: 0;
     }
 }

@@ -19,17 +19,12 @@ $(function(){
         $overlay.attr('aria-hidden', !expanded);
     }
 
-    $burger.on('click keypress', function(e) {
-        if (e.type === 'click' || e.key === "Enter" || e.key === ' ') {
-            e.preventDefault();
+    $burger.on('click keypress', function() {
             toggleMenu();
-        }
     });
 
     $('.nav__link').on('click', function() {
-        if ($(window).width() <= 768) {
             if ($nav.hasClass('active')) toggleMenu();
-        }
     });
 
     $overlay.on('click', toggleMenu);
@@ -44,24 +39,11 @@ $(function(){
         nextArrow: '<button class="slick-next"></button>',
         responsive: [
             {
-                breakpoint: 1024,
-                settings:{
-                    slidesToShow: 1,
-                    arrows: true
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    arrows: true
-                }
-            },
-            {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
                     arrows: false,
+                    dots: true
                 }
             }
         ]

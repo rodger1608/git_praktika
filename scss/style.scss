@@ -1,11 +1,12 @@
+@use "fonts";
 @use "variables" as *;
-@use "mixins";
 @use "global";
 @use "header";
-@use "hero";
-@use "services";
-@use "about";
-@use "portfolio";
+@use "nav";
+@use "feature";
 @use "slider";
+@use "portfolio";
+@use "about";
+@use "services";
 @use "footer";
 @use "media";

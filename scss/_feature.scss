@@ -1,0 +1,28 @@
+@use "variables" as *;
+@use "fonts";
+@use "sass:color";
+
+.featured {
+    background-color: $color-blue-sky;
+    background-color: linear-gradient(360deg, rgba(24, 102, 135, 1) 0%, rgba(35, 134, 176, 1) 100%);
+}
+
+.feature__wrapper {
+    flex: 1;
+}
+
+
+.feature__title {
+    font-size: 50px;
+    color: $color-white;
+    font-weight: bold;
+    line-height: 1.1;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+
+.feature__text {
+    font-size: 14px;
+    color: $color-white;
+    line-height: 1.7;
+}

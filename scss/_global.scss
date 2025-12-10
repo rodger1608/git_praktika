@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "fonts" as *;
 
 * {
     margin: 0;
@@ -25,8 +26,201 @@ body {
 
 .d-flex {
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 15px;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-flex {
+    display: inline-flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.align-items-center {
     align-items: center;
 }
+
+.align-items-start {
+    align-items: start;
+}
+
+.align-items-flex-start {
+    align-items: flex-start;
+}
+
+.align-self-stretch {
+    align-self: stretch;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-dec-none {
+    text-decoration: none;
+}
+
+.opac-0 {
+    opacity: 0;
+}
+
+.opac-1 {
+    opacity: 1;
+}
+
+.g-10 {
+    gap: 10px;
+}
+
+.g-20 {
+    gap: 20px;
+}
+
+.g-30 {
+    gap: 30px;
+}
+
+.g-40 {
+    gap: 40px;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.p-1 {
+    padding: 1px;
+}
+
+.p-6 {
+    padding: 6px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.p-1530 {
+    padding: 15px 30px;
+}
+
+.p-6020 {
+    padding: 60px 20px;
+}
+
+.p-10zero {
+    padding: 10px 0;
+}
+
+.p-16zero {
+    padding: 16px 0;
+}
+
+.p-20zero {
+    padding: 20px 0;
+}
+
+.p-60zero {
+    padding: 60px 0;
+}
+
+.pr-20 {
+    padding-right: 20px;
+}
+
+.padinl-15 {
+    padding-inline: 15px;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.m-0auto {
+    margin: 0 auto;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.z-30 {
+    z-index: 30;
+}
+
+.z-40 {
+    z-index: 40;
+}
+
+.z-50 {
+    z-index: 50;
+}
+
+.objf-cover {
+    object-fit: cover;
+}
+
+.objf-fill {
+    object-fit: fill;
+}
+
