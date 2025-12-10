@@ -5,11 +5,11 @@
     border-bottom: 1px solid $color-border;
 
 &__left {
-    flex: 2;
+    flex: 2 1 60%;
     }
 
 &__right {
-    flex: 1;
+    flex: 1 1 35%;
     }
 
 &__title {
