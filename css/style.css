@@ -663,14 +663,29 @@ body.lock {
     height: 220px;
   }
   .slick-dots {
-    bottom: 10px;
+    display: flex !important;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    bottom: 0;
+    list-style: none;
+    transform: translateY(4px);
   }
+  .slick-dots li button,
   .slick-dots li button:before {
-    font-size: 10px;
-    opacity: 0.6;
+    content: none !important;
+    display: none !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
   }
-  .slick-dots li.slick-active button:before {
-    opacity: 1;
+  .slick-dots li {
+    width: 8px;
+    height: 8px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0;
   }
   .services__img img {
     height: auto;
